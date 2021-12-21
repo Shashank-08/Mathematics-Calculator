@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 .calcButton.pushed, .calcButton.active, .calcButton:active {
-  border-right: 0px solid #2e2e79;
-  border-bottom: 2px solid #2e2e79;
-  background-color: #202054;
+  border-right: 0px solid #09367e;
+  border-bottom: 2px solid #09367e;
+  background-color: #09367e;
 }
 
 .calcButton.inverse.pushed, .calcButton.inverse.active, .calcButton.inverse:active {
@@ -74,7 +74,7 @@
   text-align: center;
   font-size: 1.5em;
   padding: 2em 2em 0.5em 2em;
-  color: #fff;
+  color: #000000;
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   -ms-border-radius: 5px 5px 0px 0px;
@@ -210,11 +210,11 @@
   box-shadow: 1px 1px 1px #050505;
   padding: 1px 6px;
   vertical-align: bottom;
-  background-color: #0F2344;
-  border-bottom-color: #0F2344;
-  border-right-color: #0F2344;
-  border-top-color: #0F2344;
-  border-left-color: #0F2344;
+  background-color: #09367e;
+  border-bottom-color: #09367e;
+  border-right-color: #09367e;
+  border-top-color: #09367e;
+  border-left-color: #09367e;
 }
 .calcButton:active {
   outline: none;
