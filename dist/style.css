@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+.calcButton.pushed, .calcButton.active, .calcButton:active {
+  border-right: 0px solid #2e2e79;
+  border-bottom: 2px solid #2e2e79;
+  background-color: #202054;
+}
+
+.calcButton.inverse.pushed, .calcButton.inverse.active, .calcButton.inverse:active {
+  border-right: 0px solid #C3C356;
+  border-bottom: 2px solid #C3C356;
+  background-color: #aaaa3c;
+}
+
+.digits .calcButton.pushed, .digits .calcButton.active, .digits .calcButton:active {
+  border-right: 0px solid #753897;
+  border-bottom: 2px solid #753897;
+  background-color: #582a72;
+}
+
+.calcButton.undo.pushed, .calcButton.undo.active, .calcButton.undo:active {
+  border-right: 0px solid #D04666;
+  border-bottom: 2px solid #D04666;
+  background-color: #b52e4d;
+}
+
+.sideOp, .misc, .fact, .baseE, .const, .btnHolder > .bS {
+  width: 4.5em;
+  margin-left: 0.3em;
+}
+.sideOp > :active, .misc > :active, .fact > :active, .baseE > :active, .const > :active, .btnHolder > .bS > :active {
+  margin-top: 2px;
+}
+.sideOp > .active, .misc > .active, .fact > .active, .baseE > .active, .const > .active, .btnHolder > .bS > .active {
+  margin-top: 2px;
+}
+.sideOp > .pushed, .misc > .pushed, .fact > .pushed, .baseE > .pushed, .const > .pushed, .btnHolder > .bS > .pushed {
+  margin-top: 2px;
+}
+
+.container-fluid {
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  background-color: #30CDD7;
+}
+
+.scenic {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100vh;
+  width: 200vw;
+  z-index: -1;
+  left: -50%;
+  top: 0;
+}
+.scenic img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.wrapper {
+  width: 517px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2em 2em 0.5em 2em;
+  color: #fff;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -ms-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  margin-top: 1em;
+}
+@media only screen and (max-width: 517px) {
+  .wrapper {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    min-width: 350px;
+  }
+}
+.wrapper h1 {
+  text-shadow: 1px 1px 1px #305C84;
+  margin-bottom: 1em;
+  font-family: "Source Sans Pro";
+}
+.wrapper .alert-warning {
+  font-size: 0.76em;
+  padding: 10px;
+  margin-top: 0.25em;
+}
+
+.calcBody {
+  background-color: #494949;
+  padding: 10px 0px 0px 0px;
+  margin: 0 auto;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  border-radius: 18px;
+  border-bottom: 10px solid #3c3c3c;
+  border-right: 5px solid #3c3c3c;
+  border-top: 2px solid #6f6f6f;
+  border-left: 2px solid #6f6f6f;
+  box-shadow: 5px 5px 10px #111111;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  perspective-origin: 50% 100%;
+}
+@media only screen and (max-width: 517px) {
+  .calcBody {
+    width: 350px;
+  }
+}
+.calcBody .window {
+  height: 5em;
+  border-style: solid;
+  border-width: 0em 0.4em 0.4em 0.4em;
+  border-color: #454545;
+  border-bottom-color: #404040;
+  background-color: #494949;
+  transform: rotateX(-16deg);
+  padding: 10px 0px;
+  border-radius: 18px 18px 0px 0px;
+}
+.calcBody .spinner {
+  height: 4.1em;
+  background-color: white;
+  box-shadow: inset 1px 2px 7px 0px #404040;
+  overflow: hidden;
+  text-align: right;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+.calcBody .eS {
+  line-height: 1em;
+  font-size: 0.8em;
+  height: 1em;
+  padding-top: 0.3em;
+  float: right;
+  padding-right: 0.3em;
+}
+.calcBody .tS {
+  font-size: 1.5em;
+  text-align: right;
+  line-height: 1.4em;
+  height: 1.4em;
+  float: right;
+  clear: right;
+  padding-right: 0.3em;
+}
+.calcBody .tS span {
+  color: #c9c9c9;
+}
+.calcBody .warn {
+  font-size: 0.6em;
+  line-height: 0.8em;
+  width: 100%;
+  position: absolute;
+  padding-right: 0.7em;
+  bottom: 0.3em;
+}
+
+.btnHolder {
+  font-size: 0.8em;
+  overflow: hidden;
+  padding: 10px;
+}
+.btnHolder > div {
+  float: left;
+}
+.btnHolder > .bS {
+  float: right;
+  margin-right: 0.1em;
+  margin-left: 0;
+  clear: right;
+}
+.btnHolder > .holdMe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.calcButton {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px 2px 4px 1px;
+  width: 4.5em;
+  display: inline-block;
+  margin-bottom: 0.6em;
+  line-height: 1.6em;
+  box-shadow: 1px 1px 1px #050505;
+  padding: 1px 6px;
+  vertical-align: bottom;
+  background-color: #0F2344;
+  border-bottom-color: #0F2344;
+  border-right-color: #0F2344;
+  border-top-color: #0F2344;
+  border-left-color: #0F2344;
+}
+.calcButton:active {
+  outline: none;
+}
+.calcButton:focus {
+  outline: none;
+}
+.calcButton.toggle.show {
+  display: inline-block;
+}
+.calcButton.h-2 {
+  line-height: 4em;
+}
+.calcButton.w2 {
+  width: 9.3em;
+  margin-left: 0.3em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.calcButton.undo {
+  background-color: #E70D43;
+  border-bottom-color: #E70D43;
+  border-right-color: #E70D43;
+  border-top-color: #E70D43;
+  border-left-color: #E70D43;
+}
+.calcButton.inverse {
+  background-color: #FCB710;
+  border-bottom-color: #FCB710;
+  border-right-color: #FCB710;
+  border-top-color: #FCB710;
+  border-left-color: #FCB710;
+}
+.digits .calcButton {
+  background-color: #5B186F;
+  border-bottom-color: #5B186F;
+  border-right-color: #5B186F;
+  border-top-color: #5B186F;
+  border-left-color: #5B186F;
+}
+.trig {
+  width: 14.1em;
+  margin-left: 0.3em;
+}
+
+.baseNum {
+  width: 9.3em;
+  margin-left: 0.3em;
+}
+@media only screen and (max-width: 517px) {
+  .baseNum {
+    margin-top: -2.6em;
+  }
+}
+
+.baseE {
+  margin-top: -2.6em;
+}
+
+.fact {
+  float: left;
+  clear: left;
+}
+@media only screen and (max-width: 517px) {
+  .fact {
+    clear: none;
+  }
+}
+
+.parenRow {
+  width: 18.9em;
+  margin-left: 0.3em;
+}
+
+@media only screen and (max-width: 517px) {
+  .misc {
+    width: 18.9em;
+    margin-left: 0.3em;
+  }
+}
+
+.digits {
+  width: 14.1em;
+  margin-left: 0.3em;
+}
+
+p.copy {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
+  width: 517px;
+  margin: 0 auto;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -ms-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+@media only screen and (max-width: 517px) {
+  p.copy {
+    width: 100%;
+  }
+}
+p.copy a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+p.copy a:hover {
+  text-decoration: none;
+  border-bottom-width: 0px;
+}
+p.mid {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 517px) {
+  .baseNum {
+    width: 4.5em;
+    margin-left: 0.3em;
+  }
+  .baseNum > :active {
+    margin-top: 2px;
+  }
+  .baseNum > .active {
+    margin-top: 2px;
+  }
+  .baseNum > .pushed {
+    margin-top: 2px;
+  }
+}

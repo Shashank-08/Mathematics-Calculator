@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid">
+  <div class="wrapper">
+    <div class="calcBody">
+      <div class="window">
+        <div class="spinner">
+          <div class="eS"></div>
+          <div class="tS"></div>
+          <div class="warn"></div>
+        </div>
+      </div>
+      <div class="btnHolder">
+        <div class="holdMe">
+          <button class="calcButton undo" data-calc="AC">AC</button>
+          <button class="calcButton kC_46 undo" data-calc="CE">CE</button>
+          <button class="calcButton toggle pushed kC_deg" data-calc="degrees">Degrees</button>
+          <button class="calcButton toggle kC_rad" data-calc="radians">Radians</button>
+        </div>
+        <div class="trig">
+          <button class="calcButton kC_1-19-9-14 inverse" data-calc="sin&lt;sup&gt;-1&lt;/sup&gt;(">sin<sup>-1</sup></button>
+          <button class="calcButton kC_1-3-15-19 inverse" data-calc="cos&lt;sup&gt;-1&lt;/sup&gt;(">cos<sup>-1</sup></button>
+          <button class="calcButton kC_1-20-1-14 inverse" data-calc="tan&lt;sup&gt;-1&lt;/sup&gt;(">tan<sup>-1</sup></button>
+          <button class="calcButton kC_19-9-14" data-calc="sin(">sin</button>
+          <button class="calcButton kC_3-15-19" data-calc="cos(">cos</button>
+          <button class="calcButton kC_20-1-14" data-calc="tan(">tan</button>
+        </div>
+        <div class="bS">
+          <button class="calcButton kC_8 undo" data-calc="backspace">&#x232B;</button>
+        </div>
+        <div class="const">
+          <button class="calcButton kC_16-9" data-calc="PI">&pi;</button>
+          <button class="calcButton kC_e" data-calc="e">e</button>
+        </div>
+        <div class="baseNum">
+          <button class="calcButton kC_12-15-7-10 inverse" data-calc="log&lt;sub&gt;10&lt;/sub&gt;(">log<sub>10</sub></button>
+          <button class="calcButton " data-calc="10^(">10<sup>x</sup></button>
+        </div>
+        <div class="baseNum">
+          <button class="calcButton kC_12-15-7-2 inverse" data-calc="log&lt;sub&gt;2&lt;/sub&gt;(">log<sub>2</sub></button>
+          <button class="calcButton " data-calc="2^(">2<sup>x</sup></button>
+        </div>
+        <div class="baseE">
+          <button class="calcButton kC_12-14 inverse" data-calc="ln(">ln</button>
+          <button class="calcButton " data-calc="e^(">e<sup>x</sup></button>
+        </div>
+        <div class="fact">
+          <button class="calcButton kC_5-24-3" data-calc="!">x!</button>
+        </div>
+        <div class="parenRow">
+          <button class="calcButton kC_16-1-18" data-calc="(">(</button>
+          <button class="calcButton kC_5-14-4" data-calc=")">)</button>
+          <button class="calcButton kC_111 kC_191 kC_47" data-calc="/">/</button>
+          <button class="calcButton kC_106 kC_42" data-calc="*">*</button>
+        </div>
+        <div class="misc">
+          <button class="calcButton inverse" data-calc="&amp;radic;(">&radic;</button>
+          <button class="calcButton " data-calc="&lt;sup&gt;2&lt;/sup&gt;">x<sup>2</sup></button>
+          <button class="calcButton kC_5-24-16" data-calc="^">^</button>
+          <button class="calcButton kC_1-14-19" data-calc="Ans">Ans</button>
+        </div>
+        <div class="digits">
+          <button class="calcButton kC_55 kC_103" data-calc="7">7</button>
+          <button class="calcButton kC_56 kC_104" data-calc="8">8</button>
+          <button class="calcButton kC_57 kC_105" data-calc="9">9</button>
+          <button class="calcButton kC_52 kC_100" data-calc="4">4</button>
+          <button class="calcButton kC_53 kC_101" data-calc="5">5</button>
+          <button class="calcButton kC_54 kC_102" data-calc="6">6</button>
+          <button class="calcButton kC_49 kC_97" data-calc="1">1</button>
+          <button class="calcButton kC_50 kC_98" data-calc="2">2</button>
+          <button class="calcButton kC_51 kC_99" data-calc="3">3</button>
+          <button class="calcButton kC_48 kC_96 w2" data-calc="0">0</button>
+          <button class="calcButton kC_110 kC_190" data-calc=".">.</button>
+        </div>
+        <div class="sideOp">
+          <button class="calcButton kC_109 kC_189 kC_45" data-calc="-">-</button>
+          <button class="calcButton kC_107 kC_43" data-calc="+">+</button>
+          <button class="calcButton kC_13 kC_187 h-2" data-calc="=">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="copy">By Shashank and Parth</a></p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
